@@ -17,10 +17,31 @@ Django using TDD approach, API documentation with Swagger, etc;..
 
 
 **How we'll handling Linting** <br>
-
 ```docker-compose run --rm app sh -c "flake8"```
 
 <br>
 
 **How we'll test** <br>
 ```docker-compose run --rm app sh -c "python manage.py test"```
+<br>
+
+
+**Django installation from within docker**
+```docker-compose run --rm app sh -c "django-admin startproject app ."```
+<br>
+
+
+**Run project with Docker Compose**
+```docker-compose up```
+<br>
+
+
+### Other commands:
+
+
+**Stop all the containers**
+```docker stop $(docker ps -a -q)```
+
+
+**Remove all the containers**
+```docker rm $(docker ps -a -q)```
