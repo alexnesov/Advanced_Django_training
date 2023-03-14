@@ -13,3 +13,14 @@ Django using TDD approach, API documentation with Swagger, etc;..
 
 
 ```docker build .``` once one has the app folder created at root <br>
+
+
+
+**How we'll handling Linting** <br>
+
+```docker-compose run --rm app sh -c "flake8"```
+
+<br>
+
+**How we'll test** <br>
+```docker-compose run --rm app sh -c "python manage.py test"```
