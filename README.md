@@ -26,12 +26,12 @@ Django using TDD approach, API documentation with Swagger, etc;..
 <br>
 
 
-**Django installation from within docker**
+**Django installation from within docker**<br>
 ```docker-compose run --rm app sh -c "django-admin startproject app ."```
 <br>
 
 
-**Run project with Docker Compose**
+**Run project with Docker Compose**<br>
 ```docker-compose up```
 <br>
 
