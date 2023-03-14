@@ -1,5 +1,5 @@
 # Advanced_Django_training
-Django using TDD approach, API documentation with Swagger, etc...
+Django using a TDD approach, using containerization of it for agility, API documentation with Swagger, Github Actions for automated testing, etc...
 
 
 <code>docker-compose run --rm app sh -c "python manage.py collectstatic"</code> <br>
