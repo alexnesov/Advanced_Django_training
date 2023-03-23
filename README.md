@@ -2,11 +2,17 @@
 Django using a TDD approach, using containerization of it for agility, API documentation with Swagger, Github Actions for automated testing, etc...
 
 
+
+![docker_compose_setup](docker_compose_setup.png)
+
+
+
 <code>docker-compose run --rm app sh -c "python manage.py collectstatic"</code> <br>
 
 ```run``` will start a specific container defined in config, to remove the container once is finished running. Important to avoir having lots of containers running in the background. <br>
 ```--rm``` removes the container <br>
 ```sh -c``` passes in a shell command
+
 
 
 
