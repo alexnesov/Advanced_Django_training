@@ -70,6 +70,29 @@ TEMPLATES = [
 WSGI_APPLICATION = 'app.wsgi.application'
 
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
+    "http://127.0.0.1:9000",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://localhost:3000",
+    "https://127.0.0.1:3000",
+]
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'FP_IO',
+        'USER': "",
+        'PASSWORD': "",
+        'HOST': "",
+        'PORT': '3306'
+    }
+}
+
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
