@@ -45,9 +45,15 @@ Django using a TDD approach, using containerization of it for agility, API docum
 ### Other commands:
 
 
-**Stop all the containers**
+**Stop all the containers** <br>
 ```docker stop $(docker ps -a -q)```
 
+<br>
 
-**Remove all the containers**
+**Remove all the containers**<br>
 ```docker rm $(docker ps -a -q)```
+
+<br>
+
+**Creating core app**<br>
+```docker-compose run --rm app sh -c "python manage.py startapp core"```
