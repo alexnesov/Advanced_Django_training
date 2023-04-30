@@ -69,9 +69,6 @@ Django using a TDD approach, using containerization of it for agility, API docum
 ```docker-compose run --rm app sh -c "python manage.py startapp core"```
 
 
-
-
-
 # DB Migration:
 
 Init:
