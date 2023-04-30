@@ -81,3 +81,26 @@ Init:
 - Avoid relying on external services!! (we dont' have necessarily control over these)
     - Ex: sendin email func, but we don't want to actually send an email
 - Speeding up tests (for example bypass sleep funcs)
+
+<br>
+
+# What is "psycopg2" (important)
+
+Package that you need in order for Django to connect to our database. It's the most popular PostgreSQL adaptor for Python. Supported by Django officially.
+
+
+- ```psycopg2-binary```: ok for dev, but not for prod
+- ```psycopg2```: compiled from source, compiled for the OS your running on.Better for reliability and perf.
+
+**Dependencies**:
+- C compiler
+- python3-dev
+- libq-dev
+<br>
+
+**Equivalent packages for Alpine**
+<br>
+- postgresql-client
+- buildbase
+- postgresql-dev
+- musldev
