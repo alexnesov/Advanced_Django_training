@@ -65,7 +65,10 @@ Django using a TDD approach, using containerization of it for agility, API docum
 
 <br>
 
-**Creating core app**<br>
+
+# Creating a new Django app (example):
+
+**Creating core app:** <br>
 ```docker-compose run --rm app sh -c "python manage.py startapp core"```
 
 
