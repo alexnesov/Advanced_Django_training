@@ -95,3 +95,8 @@ Package that you need in order for Django to connect to our database. It's the m
 - buildbase
 - postgresql-dev
 - musldev
+
+
+# Check directly of DB works:
+
+```docker-compose run --rm app sh -c "python manage.py wait_for_db"```
