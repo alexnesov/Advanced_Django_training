@@ -1,9 +1,6 @@
 # Advanced_Django_training
 Django using a TDD approach, using containerization of it for agility, API documentation with Swagger, Github Actions for automated testing, etc...
 
-
-
-
 # Apps
 
 - ```app/``` - Django project 
@@ -15,13 +12,11 @@ Django using a TDD approach, using containerization of it for agility, API docum
 ![docker_compose_setup](docker_compose_setup.png)
 
 
-
 <code>docker-compose run --rm app sh -c "python manage.py collectstatic"</code> <br>
 
 ```run``` will start a specific container defined in config, to remove the container once is finished running. Important to avoir having lots of containers running in the background. <br>
 ```--rm``` removes the container <br>
 ```sh -c``` passes in a shell command
-
 
 ## Init project
 
@@ -30,10 +25,7 @@ Django using a TDD approach, using containerization of it for agility, API docum
 ## Start services
 
 ```docker-compose up``` <br>
-
-
 ```docker build .``` once one has the app folder created at root <br>
-
 
 <br>
 
@@ -51,9 +43,7 @@ Django using a TDD approach, using containerization of it for agility, API docum
 ```docker-compose up```
 <br>
 
-
 ### Other commands:
-
 
 **Stop all the containers** <br>
 ```docker stop $(docker ps -a -q)```
@@ -65,12 +55,10 @@ Django using a TDD approach, using containerization of it for agility, API docum
 
 <br>
 
-
 # Creating a new Django app (example):
 
 **Creating core app:** <br>
 ```docker-compose run --rm app sh -c "python manage.py startapp core"```
-
 
 # DB Migration:
 
