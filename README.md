@@ -77,3 +77,10 @@ Django using a TDD approach, using containerization of it for agility, API docum
 Init:
 
 ```docker-compose run --rm app sh -c "python manage.py makemigrations"```
+
+
+# Why using Mocking ?
+
+- Avoid relying on external services!! (we dont' have necessarily control over these)
+    - Ex: sendin email func, but we don't want to actually send an email
+- Speeding up tests (for example bypass sleep funcs)
