@@ -3,6 +3,15 @@ Django using a TDD approach, using containerization of it for agility, API docum
 
 
 
+
+# Apps
+
+- ```app/``` - Django project 
+- ```app/core/``` - Code shared between multiple apps
+- ```app/user/``` - User related code (User registration & auth tokens)
+- ```app/recipe/``` - Recipe related code (Handling and updating ingrediants and tags and managing tags)
+
+
 ![docker_compose_setup](docker_compose_setup.png)
 
 
@@ -14,16 +23,17 @@ Django using a TDD approach, using containerization of it for agility, API docum
 ```sh -c``` passes in a shell command
 
 
+## Init project
 
+```docker-compose run --rm app sh -c "django-admin startproject app .```
 
+## Start services
+
+```docker-compose up``` <br>
 
 
 ```docker build .``` once one has the app folder created at root <br>
 
-
-
-**How we'll handling Linting** <br>
-```docker-compose run --rm app sh -c "flake8"```
 
 <br>
 
@@ -57,3 +67,13 @@ Django using a TDD approach, using containerization of it for agility, API docum
 
 **Creating core app**<br>
 ```docker-compose run --rm app sh -c "python manage.py startapp core"```
+
+
+
+
+
+# DB Migration:
+
+Init:
+
+```docker-compose run --rm app sh -c "python manage.py makemigrations"```
