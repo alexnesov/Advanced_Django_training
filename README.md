@@ -100,3 +100,12 @@ Package that you need in order for Django to connect to our database. It's the m
 # Check directly of DB works:
 
 ```docker-compose run --rm app sh -c "python manage.py wait_for_db"```
+
+
+# First migration
+
+Not working: ```docker-compose run --rm app sh -c "python manage.py makemigrations"```
+<br>
+
+Working: ```docker-compose run app sh -c "python manage.py makemigrations core"```
+
