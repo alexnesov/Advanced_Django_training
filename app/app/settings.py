@@ -83,7 +83,7 @@ DATABASES = {
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASS'),
         'HOST': os.environ.get('DB_HOST'),
-        'PORT': os.environ.get('DB_PORT')  # new
+        'PORT': os.environ.get('DB_PORT')                   # new
     }
 }
 # !!!!! THESE VALUES ABOVE MATCH THE DOCKER-COMPOSE.YML FILE THAT IS INSIDE OF OUR PROJECT
