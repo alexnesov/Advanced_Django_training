@@ -112,3 +112,9 @@ Working: ```docker-compose run app sh -c "python manage.py makemigrations core"`
 <br>
 
 ```docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"```
+
+
+# Create superuser
+
+
+```docker-compose run --rm app sh -c "python manage.py createsuperuser"```

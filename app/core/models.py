@@ -2,12 +2,16 @@
 Database models.
 """
 
+
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
 )
+
+
+
 
 class UserManager(BaseUserManager):
 
@@ -33,6 +37,8 @@ class UserManager(BaseUserManager):
 
         return user
     
+
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     """Custom user model that suppors using email instead of username"""
